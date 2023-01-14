@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: fontello, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 4px;
+}
+ul{
+    margin: 0;
+}
+ol,ul{
+    margin-top: 12px;
+    padding-left: 12px ;
+ }
+.text-grey{
+    color: #9b9494
+}
+.bg-grey {
+    background-color: #eee;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+i {
+    color: rgb(11, 128, 223);
+}
+p{
+    margin: 0;
+}
+#nav-bar ul,
+#personal-info ul {
+    list-style: none;
+}
+
+/* banner css */
+.banner-img img {
+    filter: brightness(50%);
+}
+img{
+    width: 100%;
+}
+.banner-text {
+    color: #cfc3c3;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+/* nav-bar css */
+
+
+
+#nav-bar .container a{
+    display: inline-block;
+    padding: 12px ;
+}
+#nav-bar .container a::before {
+    content: "";
+    border-left: 2px solid rgb(190, 186, 186);
+    padding-right: 16px;
+}
+
+.personal-img {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.personal-img img{
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+::marker {
+    color: blue;
+    font-size: 24px;
+}
+
+
+/* about css */
+#about>div {
+    padding: 48px;
+    font-size: 14px;
+    
+}
+
+.section-title {
+    font-size: 24px;
+}
+
+#personal-info {
+    background-color: #ece7e7;
+}
+
+
+#target {
+    background-color: #eee;
+}
+
+
+/* job-information section css*/
+
+.job-grid-table {
+    font-size: 14px;
+    color: rgb(90, 85, 85);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.job-grid-table>div:first-child {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.job-grid-table i {
+    font-size: 36px;
+    color: #aaa;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.present {
+    background-color: rgb(36, 129, 236);
+    border-radius: 4px;
+    padding: 0 8px;
+    color: #fff;
+}
+
+.second-title {
+    color: #000;
+    font-size: 16px;
+}
+
+ul ul {
+    list-style: none;
+}
+
+ul ul li::before {
+    content: "- ";
+}
+
+.hobby-content i {
+    font-size: 20px;
+    color: rgb(11, 128, 223);
+    /* border-radius: 50%;
+    border: 1px solid rgb(92, 42, 209); */
+}
+
+.hobby-content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12px;
+    justify-content: space-around;
+}
+
+.hobby-content>div {
+    display: flex;
+    flex-basis: 72px;
+    row-gap: 12px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.icon-round {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid rgb(11, 128, 223);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kỹ năng */
+.level-display {
+    position: relative;
+    width: 80%;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    border-bottom: 3px solid rgba(211, 208, 208, 0.5);
+}
+
+.hr {
+    border: none;
+    opacity: 1;
+    position: absolute;
+    bottom: -19.5px;
+    height: 6px;
+    background-color: rgb(11, 128, 223);
+}
+
+.hr-1 {
+    width: 30%;
+}
+
+.hr-2 {
+    width: 70%;
+}
+
+.hr-3 {
+    width: 30%;
+}
+
+.hr-4 {
+    width: 67%;
+}
+
+.hr-5 {
+    width: 40%;
+}
+
+.hr-6 {
+    width: 34%;
+}
+
+/* certificate */
+
+.certificate>div {
+    padding: 24px 0;
+    border-bottom: 1px solid #d6c08d;
+    display: flex;
+    /* gap: 48px; */
+}
+
+.certificate>div:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+
+
+.border-left::before {
+    content: "";
+    border-left: 1px solid #d6c08d;
+    margin-right: 36px;
+}
+
+
+
+.certificate-text {
+    font-size: 15px;
+}
+
+.certificate-text ul {
+    list-style: none;
+    font-size: 14px;
+    margin-top: 16px;
+    color: #9b9494;
+}
+
+.certificate-text li::before {
+    content: " - ";
+}
+
+/* project css */
+
+
+.project-item >div {
+    border: 1px solid #eee;
+    border-radius: 6px;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+
+
+.project-name {
+    font-size: 16px;
+}
+
+
+
+.project-sub i {
+    margin-right: 6px;
+    color: #aaa;
+}
+
+.year {
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgb(11, 128, 223);
+}
+.border{
+    border: none!important;
+}
+.border>div {
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 6px 12px;
+    vertical-align: baseline;
+    border-bottom: 1px solid #ddd
+}
+
+.hihi td {
+    border-bottom: none;
+}
+
+/* footer css */
+#footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+#footer li {
+    display: flex;
+    align-items: center;
+}
+
+#footer i {
+    margin-right: 4px;
+    font-size: 28px;
+}
