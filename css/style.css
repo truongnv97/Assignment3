@@ -109,6 +109,7 @@ img{
 /* job-information section css*/
 
 .job-grid-table {
+    height: 100%;
     font-size: 14px;
     color: rgb(90, 85, 85);
     display: flex;

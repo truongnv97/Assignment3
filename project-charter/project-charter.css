@@ -1,0 +1,147 @@
+body {
+    font-size: 14px;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "goal goal team time-line"
+        "scopes scopes primary time-line";
+    gap: 12px;
+    padding: 12px;
+}
+
+.project-grid>div {
+    background-color: #f4f4f4;
+}
+
+#goals {
+    grid-area: goal;
+}
+
+#team {
+    grid-area: team;
+}
+
+#time-line {
+    grid-area: time-line;
+}
+
+#scopes {
+    grid-area: scopes;
+}
+
+#primary {
+    grid-area: primary;
+}
+
+.header-title {
+    border-bottom: 2px solid #ccc;
+    ;
+}
+
+#goals,
+#team,
+#time-line,
+#scopes,
+#primary {
+    padding: 12px;
+}
+
+.goals,
+.team,
+.time-line,
+.scopes,
+.primary {
+    padding-top: 12px;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.goals {
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+}
+
+.goals i {
+
+    margin-left: 3%;
+    margin-top: 12px;
+    margin-right: 5%;
+}
+
+.team i {
+    margin-right: 8%;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 5%;
+    padding: 16px;
+    background-color: blueviolet;
+    border-radius: 50%;
+
+}
+
+.time-line {
+    border-bottom: 1px dashed rgb(9, 184, 125);
+padding-left: 12px;
+}
+
+.scopes>div {
+    padding-right: 32px;
+}
+
+.primary {
+    display: flex;
+}
+
+.primary i {
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+}
+
+/* media query */
+@media only screen and (max-width: 900px) {
+    .project-grid {
+        grid-template-areas: "goal""scopes""team"" primary""time-line"
+        ;
+    }
+
+    .goals,
+    .team,
+    .time-line,
+    .scopes,
+    .primary {
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    i{
+        margin-bottom: 12px;
+        align-self: center;
+    }
+   .number{
+        align-self: baseline;
+        margin: 12px 0 12px 12px;
+    }
+   
+    
+}
+
